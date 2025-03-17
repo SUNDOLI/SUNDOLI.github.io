@@ -1,0 +1,71 @@
+* {
+    /* 모든태그 */
+    font-size: inherit;
+    /* 16px */
+    font-weight: inherit;
+    /* 400 */
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* 가상요소 박스크기(태그가 아님) */
+
+ul {
+    list-style: none;
+}
+
+ol {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    /* html 검정색 상속*/
+    text-decoration: none;
+}
+
+/* 기울어진 태그 세우기 */
+em {
+    font-style: normal;
+}
+
+i {
+    font-style: normal;
+}
+
+address {
+    font-style: normal;
+}
+
+body {
+    line-height: 1;
+    /* 박스와 폰트 사이즈를 맞춘다 */
+}
+
+img {
+    max-width: 100%;
+    vertical-align: top;
+    /* 이미지 사이 공간 삭제 베이스라인 */
+}
+
+button {
+    background: transparent;
+    border: none;
+    border: 0;
+    cursor: pointer;
+    /* 손가락 모양 */
+}
+
+p {
+    line-height: 1.5;
+    /* 행간을 자연스럽게 띄우기 위해 */
+    word-break: keep-all;
+    /* 2행이상 문단 줄바꿈시 단어로 줄바꿈 */
+}

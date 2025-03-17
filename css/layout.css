@@ -1,0 +1,49 @@
+:root {
+    --body-color: #212023;
+    --text-color: #23303d;
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    color: var(--body-color);
+    /* background: #f1f1f1 url(../lib/images/pt01.png); */
+    background: url(../images/bg.jpg)no-repeat center bottom/cover;
+}
+
+
+.title {
+    font-size: 3.2rem;
+    font-weight: 600;
+    margin-bottom: 4rem;
+}
+
+.portfolio {
+    background: url(../images/bg_common.jpg)no-repeat fixed center bottom/cover;
+    /* background: #f4d3b4; */
+}
+
+@media (max-width: 768px) {
+    .portfolio {
+        background: url(../images/bg_common.jpg)no-repeat fixed left top/cover;
+    }
+}
+
+.section {
+    overflow: hidden;
+}
+
+body a,
+address {
+    color: var(--text-color);
+}
+
+.inner {
+    max-width: 141rem;
+    margin: 0 auto;
+    width: 100%;
+}
