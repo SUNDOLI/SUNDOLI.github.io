@@ -630,12 +630,61 @@
 
 .profile {}
 
-.profile .postit {
-    margin: 0 auto;
-    max-height: 250px;
-    padding: 40px 50px 40px 50px;
-    background: #f4d3b4;
+.profile .message {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
 
+.profile .postit {
+    position: relative;
+    margin: 0 auto;
+    padding: 6rem 5rem;
+    background: rgba(244, 211, 180, 0.7);
+    color: #333;
+}
+
+
+.profile .postit .tit {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.profile .postit h3 {
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+}
+
+.profile .postit .name h3 {
+    font-size: 2.4rem;
+    font-weight: 600;
+
+    margin-top: 2.4rem;
+}
+
+.profile .postit .contect ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+}
+
+.profile .postit .contect ul li {
+    display: flex;
+    gap: 1.6rem;
+}
+
+@media (max-width: 768px) {
+    .profile .postit {
+        position: relative;
+        margin: 0 auto;
+        padding: 6rem 5rem;
+        background: rgba(244, 211, 180, 0.7);
+        color: #333;
+        /* r */
+        margin: 0 2.4rem;
+    }
 }
 
 .footer .to_top {
