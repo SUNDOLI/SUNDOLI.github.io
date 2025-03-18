@@ -296,6 +296,10 @@
     font-weight: 300;
 }
 
+.main_visual p strong {
+    display: block;
+}
+
 .main_visual .me {
     position: absolute;
     top: 50%;
@@ -322,7 +326,7 @@
         position: relative;
         /* r */
         padding: 0 1.6rem;
-        padding-bottom: 20rem;
+        padding-bottom: 16rem;
     }
 
     .main_visual h2 {
@@ -331,8 +335,8 @@
         letter-spacing: 2rem;
         /* background: url(../images/line.png)no-repeat left bottom; */
         /* r */
-        font-size: 4rem;
-        font-weight: 100;
+        font-size: 6.4rem;
+        font-weight: 50;
         letter-spacing: 1rem;
 
     }
@@ -342,13 +346,19 @@
         font-weight: 700;
         color: #ff6347;
         /* r */
-        font-size: 8rem;
+        font-size: 10rem;
 
     }
 
     .main_visual p {
-        font-size: 15px;
+        font-size: 16px;
         font-weight: 300;
+        padding-left: 0.8rem;
+    }
+
+    .main_visual p span {
+        /* r */
+        display: block;
     }
 
     .main_visual .me {
@@ -501,45 +511,157 @@
 
 @media (max-width: 768px) {
     .portfolio .inner .desc {
+        /* r */
         margin: 0 1.6rem;
     }
 
     .portfolio .pt_wrap {
+        /* r */
         flex-direction: column;
         align-items: stretch;
     }
 
     .portfolio h2 {
         margin-bottom: 32px;
+
     }
 
     .portfolio h2 strong {
         display: inline-block;
         margin-bottom: 8px;
+        font-size: 40px;
+        font-weight: 700;
+        box-shadow: inset 0 -20px 0 #fab26e;
+        /* r */
+        display: inline-block;
         font-size: 32px;
         font-weight: 600;
-        box-shadow: inset 0 -20px 0 #fab26e;
+
+
     }
 
     .portfolio h2 span {
         display: block;
     }
 
-    .portfolio .mockup .mockup_img_p {
-        width: 100%;
-        height: 200px;
-    }
+    .portfolio .mockup .mockup_img_p {}
 
     .portfolio .mockup .mockup_img_p img {
+        /* r */
         transition: none;
     }
 
+    .portfolio .pt_wrap {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+
+        /* background: rgba(0, 0, 0, 0.05);
+            padding: 80px;
+            border-radius: 24px; */
+    }
+
+    .portfolio .pt_wrap>* {
+        flex: 1;
+    }
+
+    .portfolio .pt_wrap .desc {
+        opacity: 0;
+        z-index: 999;
+        transform: translate(0, 200px);
+    }
+
+    .portfolio .pt_table {
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+
+    .portfolio .pt_table th {
+        text-align: left;
+        min-width: 120px;
+        height: 32px;
+        font-weight: 600;
+    }
+
+    .portfolio .pt_table span {
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        font-size: 0;
+        margin-right: 8px;
+        vertical-align: top;
+        border-radius: 50%;
+        border: 1px solid #333;
+    }
+
+    .portfolio .lnk_btn {
+        display: inline-flex;
+        align-items: center;
+        height: 48px;
+
+        padding: 0 32px;
+        background: #333;
+        color: #fff;
+        border-radius: 16px;
+    }
+
+    .portfolio.on .pt_wrap .desc {
+        opacity: 1;
+        transform: translate(0, 0);
+        transition: 0.4s;
+    }
+
+    .portfolio .pt_wrap .mockup {
+        opacity: 0;
+        transform: translate(200px, 0);
+    }
+
+    .portfolio.on .pt_wrap .mockup {
+        opacity: 1;
+        transform: translate(0, 0);
+        transition: 0.4s 0.4s;
+    }
+
+    .portfolio .mockup .mockup_img_p {
+        width: 640px;
+        height: 400px;
+        overflow: hidden;
+
+        border-radius: 32px;
+        border: 2px solid #ddd;
+        box-shadow: 0 0 24px rgba(0, 0, 0, 0.25);
+
+        /* r */
+        width: calc(100% - 3.2rem);
+        height: 240px;
+        border-radius: 8px;
+        margin: 0 1.6rem;
+    }
+
+    .portfolio .mockup .mockup_img_p img {
+        transition: 10s;
+        /* r */
+        transition: none;
+
+
+    }
+
+    .portfolio .mockup .mockup_img_p:hover img {
+        transform: translate(0, calc(-100% + 400px));
+        /* r */
+        transform: none;
+
+    }
 
     .portfolio02 .pt_wrap {
+        gap: 120px;
+        /* r */
         gap: 30px;
     }
 
     .portfolio02 .pt_wrap .mockup {
+        order: -1;
+        /* r */
         order: 0;
     }
 }
