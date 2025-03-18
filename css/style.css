@@ -312,14 +312,13 @@
 
 @media (max-width: 768px) {
     .main_visual .inner {
-        margin: 0 1.6rem;
+        padding: 0 1.6rem;
         text-align: center;
     }
 
     .main_visual h2 {
         font-size: 3.2rem;
         letter-spacing: 1.2rem;
-        margin-bottom: 2.4rem;
     }
 
     .main_visual h2::first-letter {
@@ -556,7 +555,7 @@
     font-size: 1.5rem;
     padding: 0 2.4rem;
     color: #333;
-    margin: 0 0 4rem 0;
+    margin: 0 0 2.4rem 0;
 }
 
 @media (max-width: 768px) {

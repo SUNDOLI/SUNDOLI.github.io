@@ -28,6 +28,11 @@ body {
 }
 
 @media (max-width: 768px) {
+
+    body {
+        background: url(../images/bg.jpg);
+    }
+
     .portfolio {
         background: url(../images/bg_common.jpg)no-repeat fixed left top/cover;
     }
@@ -46,10 +51,4 @@ address {
     max-width: 141rem;
     margin: 0 auto;
     width: 100%;
-}
-
-@media (max-width: 768px) {
-    .inner {
-        width: 100vw;
-    }
 }
