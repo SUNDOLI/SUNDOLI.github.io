@@ -47,3 +47,9 @@ address {
     margin: 0 auto;
     width: 100%;
 }
+
+@media (max-width: 768px) {
+    .inner {
+        width: 100vw;
+    }
+}

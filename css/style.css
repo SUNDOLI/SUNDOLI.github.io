@@ -1,5 +1,5 @@
 * {
-    outline: 1px solid tomato-;
+    outline: 1px solid tomato;
 }
 
 .header h1 {
@@ -19,10 +19,15 @@
 }
 
 @media (max-width: 768px) {
+
     .header h1 {
+        position: static;
         transform: rotate(0);
-        left: 0;
-        top: 6.4rem;
+        margin-top: 7.2rem;
+    }
+
+    .header h1 a {
+        display: inline-block;
     }
 }
 
@@ -99,7 +104,6 @@
 
 @media (max-width: 768px) {
     .header .btn {
-        top: 5.6rem;
         right: 1.6rem;
     }
 }
@@ -314,6 +318,7 @@
 
     .main_visual h2 {
         font-size: 3.2rem;
+        letter-spacing: 1.2rem;
         margin-bottom: 2.4rem;
     }
 
@@ -449,6 +454,15 @@
 
 }
 
+
+.portfolio02 .pt_wrap {
+    gap: 120px;
+}
+
+.portfolio02 .pt_wrap .mockup {
+    order: -1;
+}
+
 @media (max-width: 768px) {
     .portfolio .inner .desc {
         margin: 0 1.6rem;
@@ -466,8 +480,8 @@
     .portfolio h2 strong {
         display: inline-block;
         margin-bottom: 8px;
-        font-size: 40px;
-        font-weight: 700;
+        font-size: 32px;
+        font-weight: 600;
         box-shadow: inset 0 -20px 0 #fab26e;
     }
 
@@ -482,6 +496,15 @@
 
     .portfolio .mockup .mockup_img_p img {
         transition: none;
+    }
+
+
+    .portfolio02 .pt_wrap {
+        gap: 30px;
+    }
+
+    .portfolio02 .pt_wrap .mockup {
+        order: 0;
     }
 }
 
@@ -500,14 +523,6 @@
 
 
 
-
-.portfolio02 .pt_wrap {
-    gap: 120px;
-}
-
-.portfolio02 .pt_wrap .mockup {
-    order: -1;
-}
 
 .training {
     /* background: #f9f9f9; */
