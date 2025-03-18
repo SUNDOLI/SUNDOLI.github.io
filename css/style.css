@@ -326,18 +326,19 @@
         position: relative;
         /* r */
         padding: 0 1.6rem;
-        padding-bottom: 16rem;
+        padding-bottom: 12rem;
     }
 
     .main_visual h2 {
         font-size: 7rem;
         font-weight: 50;
         letter-spacing: 2rem;
-        /* background: url(../images/line.png)no-repeat left bottom; */
+        margin-bottom: 0.8rem;
         /* r */
         font-size: 6.4rem;
         font-weight: 50;
         letter-spacing: 1rem;
+        margin-bottom: 1.6rem;
 
     }
 
@@ -382,7 +383,14 @@
 }
 
 
-.portfolio {}
+.portfolio {
+    position: relative;
+}
+.portfolio .bg_top{
+    position: absolute;
+    top: -6rem;
+    display: none;
+}
 
 .portfolio h2 {
     margin-bottom: 32px;
@@ -508,11 +516,30 @@
 .portfolio02 .pt_wrap .mockup {
     order: -1;
 }
-
+.portfolio03 {
+    position: relative;
+}
+.portfolio03 .bg_bottom{
+    position: absolute;
+    z-index: 999;
+    bottom: -8rem;
+    display: none;
+}
 @media (max-width: 768px) {
+    .portfolio .bg_top{
+        position: absolute;
+        top: -6rem;
+        display: none;
+         /* r */
+         display: block;
+    }
+    .portfolio .inner {
+       
+        
+    }
     .portfolio .inner .desc {
         /* r */
-        margin: 0 1.6rem;
+        margin: 10rem 1.6rem 0;
     }
 
     .portfolio .pt_wrap {
@@ -544,7 +571,13 @@
         display: block;
     }
 
-    .portfolio .mockup .mockup_img_p {}
+    .portfolio .mockup {
+       
+    }
+    .portfolio .mockup .mockup_img_p {
+         /* r */
+        overflow: hidden;
+    }
 
     .portfolio .mockup .mockup_img_p img {
         /* r */
@@ -633,7 +666,7 @@
 
         /* r */
         width: calc(100% - 3.2rem);
-        height: 240px;
+        height: 18rem;
         border-radius: 8px;
         margin: 0 1.6rem;
     }
@@ -663,6 +696,14 @@
         order: -1;
         /* r */
         order: 0;
+    }
+    .portfolio03 .bg_bottom{
+        position: absolute;
+        z-index: 999;
+        bottom: -8rem;
+        display: none;
+        /* r */
+        display: block;
     }
 }
 
