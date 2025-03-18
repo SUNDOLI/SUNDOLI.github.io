@@ -317,7 +317,9 @@
 
     .main_visual .inner {
         position: relative;
+        /* r */
         padding: 0 1.6rem;
+        padding-bottom: 30rem;
     }
 
     .main_visual h2 {
@@ -329,6 +331,7 @@
         font-size: 3.2rem;
         font-weight: 100;
         letter-spacing: 1rem;
+
     }
 
     .main_visual h2::first-letter {

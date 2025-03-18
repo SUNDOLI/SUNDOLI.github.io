@@ -34,7 +34,8 @@ body {
     }
 
     .portfolio {
-        background: url(../images/bg_common.jpg)no-repeat fixed left top/cover;
+        /* r */
+        background: #f4d3b4;
     }
 }
 
