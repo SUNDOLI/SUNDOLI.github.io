@@ -311,27 +311,58 @@
 }
 
 @media (max-width: 768px) {
+    .main_visual {
+        overflow: hidden;
+    }
+
     .main_visual .inner {
+        position: relative;
         padding: 0 1.6rem;
-        text-align: center;
     }
 
     .main_visual h2 {
+        font-size: 7rem;
+        font-weight: 50;
+        letter-spacing: 2rem;
+        /* background: url(../images/line.png)no-repeat left bottom; */
+        /* r */
         font-size: 3.2rem;
-        letter-spacing: 1.2rem;
+        font-weight: 100;
+        letter-spacing: 1rem;
     }
 
     .main_visual h2::first-letter {
+        font-size: 12rem;
+        font-weight: 700;
+        color: #ff6347;
+        /* r */
         font-size: 6rem;
-    }
 
-    .main_visual .me {
-        display: none;
     }
 
     .main_visual p {
-        white-space: wrap;
+        font-size: 15px;
+        font-weight: 300;
     }
+
+    .main_visual .me {
+        position: absolute;
+        top: 50%;
+        right: 100px;
+        z-index: 999;
+
+        width: 20rem;
+        height: 45rem;
+
+        transform: translate(0, -50%);
+        /* r */
+        display: none;
+    }
+
+    .main_visual .me img {
+        transform: rotate(25deg);
+    }
+
 }
 
 
