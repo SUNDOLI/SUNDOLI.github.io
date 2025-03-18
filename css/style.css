@@ -23,7 +23,7 @@
     .header h1 {
         position: static;
         transform: rotate(0);
-        margin-top: 7.2rem;
+        margin-top: 4rem;
     }
 
     .header h1 a {
@@ -33,7 +33,7 @@
 
 .header .btn {
     position: fixed;
-    top: 6.4rem;
+    top: 3.2rem;
     right: 6.4rem;
     z-index: 1001;
 
