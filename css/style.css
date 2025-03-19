@@ -637,6 +637,11 @@
         transition: 0.4s;
     }
 
+    .portfolio.on .pt_wrap {
+        /* r */
+        transition: 0.4s;
+    }
+
     .portfolio .pt_wrap .mockup {
         opacity: 0;
         transform: translate(200px, 0);
@@ -666,10 +671,11 @@
 
     .portfolio .mockup .mockup_img_p img {
         transition: 10s;
+    }
+
+    .portfolio .mockup .mockup_img_p {
         /* r */
-        transition: none;
-
-
+        transition: 10s;
     }
 
     .portfolio .mockup .mockup_img_p:hover img {
@@ -859,7 +865,7 @@
         position: relative;
         margin: 0 auto;
         padding: 6rem 5rem;
-        background: rgba(244, 211, 180, 0.7);
+        background: #f4d3b4;
         color: #333;
         /* r */
         margin: 0 2.4rem;
