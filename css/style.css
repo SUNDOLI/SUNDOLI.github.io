@@ -533,7 +533,7 @@
 
     .portfolio .inner .desc {
         /* r */
-        margin: 8rem 1.6rem 0;
+        margin: 0 1.6rem 0;
     }
 
     .portfolio .pt_wrap {
@@ -659,7 +659,7 @@
 
         /* r */
         width: calc(100% - 3.2rem);
-        height: 18rem;
+        height: 17rem;
         border-radius: 8px;
         margin: 0 1.6rem;
     }
@@ -783,6 +783,10 @@
         font-size: 1.6rem;
         font-weight: 500;
         line-height: 4rem;
+    }
+
+    .training .inner ul li a span {
+        text-align: center;
     }
 
     .training .inner ul li a p {

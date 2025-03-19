@@ -22,12 +22,16 @@ body {
     }
 
     .wrapper {
-        overflow: auto;
+        display: flex;
+        flex-direction: column;
         scroll-snap-type: y mandatory;
+        overflow: scroll;
     }
 
     section {
         scroll-snap-align: start;
+        min-width: 100%;
+        min-height: 100%;
     }
 }
 
