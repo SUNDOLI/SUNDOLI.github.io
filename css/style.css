@@ -631,16 +631,18 @@
         border-radius: 16px;
     }
 
+    .portfolio .pt_wrap .desc {
+        /* r */
+        transition: 0.4s;
+    }
+
+
     .portfolio.on .pt_wrap .desc {
         opacity: 1;
         transform: translate(0, 0);
         transition: 0.4s;
     }
 
-    .portfolio.on .pt_wrap {
-        /* r */
-        transition: 0.4s;
-    }
 
     .portfolio .pt_wrap .mockup {
         opacity: 0;
@@ -648,6 +650,13 @@
     }
 
     .portfolio.on .pt_wrap .mockup {
+        opacity: 1;
+        transform: translate(0, 0);
+        transition: 0.4s 0.4s;
+    }
+
+    .portfolio .pt_wrap .mockup {
+        /* r */
         opacity: 1;
         transform: translate(0, 0);
         transition: 0.4s 0.4s;
@@ -670,11 +679,6 @@
     }
 
     .portfolio .mockup .mockup_img_p img {
-        transition: 10s;
-    }
-
-    .portfolio .mockup .mockup_img_p {
-        /* r */
         transition: 10s;
     }
 
