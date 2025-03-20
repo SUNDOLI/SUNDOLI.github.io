@@ -735,16 +735,20 @@
 
         transform: translate(0, 200px);
 
+
     }
 
     .portfolio.on .mockup_img_m {
         opacity: 1;
         transform: translate(0, 0);
         transition: 0.4s 0.4s;
+
     }
 
     .portfolio .mockup_img_m img {
         transition: 10s;
+        /* r */
+        transition: none;
     }
 
     .portfolio .mockup_img_m:hover img {
@@ -752,6 +756,7 @@
 
         /* r */
         transform: translate(0, calc(-100% + 172px));
+        transform: none;
     }
 
 }
