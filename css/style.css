@@ -494,7 +494,6 @@
     overflow: hidden;
 
     border-radius: 32px;
-    border: 2px solid #ddd;
     box-shadow: 0 0 24px rgba(0, 0, 0, 0.25);
 
 }
@@ -509,15 +508,36 @@
 
 }
 
+.portfolio .mockup_img_m {
+    position: absolute;
+    bottom: 200px;
+    left: 800px;
+    width: 200px;
+    height: 356px;
+    overflow: hidden;
 
-.portfolio02 .pt_wrap {
-    gap: 120px;
+    opacity: 0;
+    transform: translate(200px, 0);
+
+
+    border-radius: 32px;
+    /* border: 2px solid #aca6d4; */
+    box-shadow: 0 0 24px rgba(0, 0, 0, 0.25);
 }
 
-.portfolio02 .pt_wrap .mockup {
-    order: -1;
+.portfolio.on .mockup_img_m {
+    opacity: 1;
+    transform: translate(0, 0);
+    transition: 0.4s 0.4s;
 }
 
+.portfolio .mockup_img_m img {
+    transition: 10s;
+}
+
+.portfolio .mockup_img_m:hover img {
+    transform: translate(0, calc(-100% + 356px));
+}
 
 
 @media (max-width: 768px) {
@@ -668,7 +688,6 @@
         overflow: hidden;
 
         border-radius: 32px;
-        border: 2px solid #ddd;
         box-shadow: 0 0 24px rgba(0, 0, 0, 0.25);
 
         /* r */
@@ -689,18 +708,51 @@
 
     }
 
-    .portfolio02 .pt_wrap {
-        gap: 120px;
+    .portfolio .mockup_img_m {
+        position: absolute;
+        bottom: 200px;
+        left: 764px;
+        width: 200px;
+        height: 356px;
+        overflow: hidden;
+
+        opacity: 0;
+        transform: translate(200px, 0);
+
+
+        border-radius: 32px;
+        /* border: 2px solid #aca6d4; */
+        box-shadow: 0 0 24px rgba(0, 0, 0, 0.25);
+
         /* r */
-        gap: 30px;
+        left: auto;
+        right: 16px;
+        bottom: 100px;
+        width: 100px;
+        height: 172px;
+
+        border-radius: 16px;
+
+        transform: translate(0, 200px);
+
     }
 
-    .portfolio02 .pt_wrap .mockup {
-        order: -1;
-        /* r */
-        order: 0;
+    .portfolio.on .mockup_img_m {
+        opacity: 1;
+        transform: translate(0, 0);
+        transition: 0.4s 0.4s;
     }
 
+    .portfolio .mockup_img_m img {
+        transition: 10s;
+    }
+
+    .portfolio .mockup_img_m:hover img {
+        transform: translate(0, calc(-100% + 356px));
+
+        /* r */
+        transform: translate(0, calc(-100% + 172px));
+    }
 
 }
 
