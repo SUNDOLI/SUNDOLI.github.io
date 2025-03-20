@@ -6,7 +6,7 @@ $(function () {
         .from('.main_visual .me', { x: 640, opacity: 0, rotation: 360 })
 
     $('.wrapper').fullpage({
-        anchors: ['intro', 'potfolio01', 'potfolio02', 'potfolio03', 'training', 'profile'],
+        anchors: ['intro', 'potfolio01', 'potfolio02', 'potfolio03', 'potfolio04', 'training', 'profile'],
         fixedElements: '.header, .footer',
         responsiveWidth: 1200,
         scrollOverflow: false,
