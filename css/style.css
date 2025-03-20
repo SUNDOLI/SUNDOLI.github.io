@@ -733,7 +733,7 @@
 
         border-radius: 16px;
 
-        transform: translate(0, 200px);
+        transform: translate(0, 160px);
 
 
     }
@@ -742,7 +742,8 @@
         opacity: 1;
         transform: translate(0, 0);
         transition: 0.4s 0.4s;
-
+        /* r */
+        transition: none;
     }
 
     .portfolio .mockup_img_m img {
